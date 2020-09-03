@@ -1,0 +1,4 @@
+{
+  "fileUris": ["https://raw.githubusercontent.com/odraude/az_webserverinstall/master/install.sh"],
+  "commandToExecute": "./install.sh"
+}
