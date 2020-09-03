@@ -1,0 +1,24 @@
+user% az vm extension set --resource-group demoazure --vm-name linuxvm --name customScript --publisher Microsoft.Azure.Extensions --settings customScript.json
+
+{- Finished ..
+  "autoUpgradeMinorVersion": true,
+  "forceUpdateTag": null,
+  "id": "/subscriptions/28952816-e733-4c6e-a035-9c1e1c2ac482/resourceGroups/demoazure/providers/Microsoft.Compute/virtualMachines/linuxvm/extensions/customScript",
+  "instanceView": null,
+  "location": "southcentralus",
+  "name": "customScript",
+  "protectedSettings": null,
+  "provisioningState": "Succeeded",
+  "publisher": "Microsoft.Azure.Extensions",
+  "resourceGroup": "demoazure",
+  "settings": {
+    "commandToExecute": "./install_web.sh",
+    "fileUris": [
+      "https://raw.githubusercontent.com/alashro/sampleweb/master/install_web.sh"
+    ]
+  },
+  "tags": null,
+  "type": "Microsoft.Compute/virtualMachines/extensions",
+  "typeHandlerVersion": "2.1",
+  "virtualMachineExtensionType": "customScript"
+}
